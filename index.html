@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="register-form-wrapper">
+        <div class="img-container"></div>
+        <div class="form-container">
+          <h1 class="form-title">Crea tu cuenta ahora</h1>
+          <form class="register-form" action="post">
+            <input type="text" placeholder="Nombre" id="nombre" />
+            <input type="text" placeholder="Apellidos" id="apellido" />
+            <input type="email" placeholder="Email" id="email" />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+            <fieldset>
+              <legend>Experiencia en</legend>
+              <div class="exp-list-grid">
+                <div class="exp-first-row">
+                  <div class="campo">
+                    <input type="checkbox" name="html" id="html" />
+                    <label for="html">HTML</label>
+                  </div>
+                  <div class="campo">
+                    <input type="checkbox" name="css" id="css" />
+                    <label for="css">CSS</label>
+                  </div>
+                  <div class="campo">
+                    <input type="checkbox" name="javascript" id="javascript" />
+                    <label for="javascript">Javascript</label>
+                  </div>
+                </div>
+                <div class="exp-second-row">
+                  <div class="campo">
+                    <input type="checkbox" name="react" id="react" />
+                    <label for="react">React</label>
+                  </div>
+                  <div class="campo">
+                    <input type="checkbox" name="node" id="node" />
+                    <label for="node">Node</label>
+                  </div>
+                  <div class="campo">
+                    <input type="checkbox" name="otros" id="otros" /otros
+                    <label for="otros"> Otros</label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <div class="campo about-you">
+              <label for="about-you">Cuentanos de ti</label>
+              <textarea
+                name="hobbies"
+                id="about-you-textarea"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <button class="submit-button" type="submit">CREAR CUENTA</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+img {
+  display: block;
+}
+
+main {
+  background: #519abc;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.img-container {
+  background-image: url('../images/pexels-christina-morillo-1181467.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.register-form-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 650px;
+  background: #fbfbfb;
+}
+
+.img-container {
+  grid-column: 1/2;
+}
+
+.form-container {
+  grid-column: 2/ -1;
+  padding: 44px;
+}
+
+@media only screen and (max-width: 600px) {
+  .register-form-wrapper {
+    grid-template-columns: unset;
+    grid-template-rows: 150px repeat(2, 1fr);
+    width: 438px;
+  }
+
+  .img-container {
+    grid-row: 1/2;
+  }
+
+  .form-container {
+    grid-row: 2/-1;
+  }
+
+  main {
+    padding: 20px;
+  }
+}
+
+.form-title {
+  font-size: 20px;
+  text-align: center;
+  color: #928e8e;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #928e8e;
+  margin-bottom: 12px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.submit-button {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0 auto;
+  display: block;
+  background: #519abc;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  color: #fbfbfb;
+  margin-top: 1rem;
+}
+
+.submit-button:hover {
+  background: #afc4d6;
+  cursor: pointer;
+  color: #928e8e;
+}
+
+.exp-list-grid {
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.exp-first-row {
+  grid-column: 1 / 2;
+}
+
+.exp-second-row {
+  grid-column: 2 / 3;
+}
+
+fieldset,
+textarea {
+  border: 1px solid rgb(190, 190, 190);
+}
+
+legend,
+.about-you label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #636060;
+}
+
+.about-you {
+  margin-top: 10px;
+}
+
+.about-you label {
+  padding-left: 12px;
+}
+
+#about-you-textarea {
+  width: 100%;
+  padding: 10px;
+  resize: none;
+  margin-top: 8px;
+  font-size: 10px;
+}
